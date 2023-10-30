@@ -116,7 +116,11 @@ const Todo = () => {
                 </button>
               ) : (
                 <>
-                  <button onClick={handleEditButton} value={id}>
+                  <button
+                    className="editButton"
+                    onClick={handleEditButton}
+                    value={id}
+                  >
                     Edit
                   </button>
                   <button onClick={handleDeleteButton} value={id}>

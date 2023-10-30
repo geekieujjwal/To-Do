@@ -95,6 +95,11 @@ main > h2 {
   margin-bottom: 2rem;
 }
 
+.todos > p {
+  overflow: auto;
+  word-wrap: break-word;
+}
+
 .update {
   display: flex;
   gap: 2rem;
@@ -112,6 +117,10 @@ main > h2 {
   font-weight: 500;
 }
 
+.editButton {
+  margin-left: 1rem;
+}
+
 .delete-btn:hover {
   color: #6a7280;
   background-color: white;
@@ -123,4 +132,59 @@ main > h2 {
   outline: none;
   border: none;
   width: 100%;
+}
+
+@media screen and (max-width: 940px) {
+  .input-btn > input {
+    width: 40rem;
+  }
+  .todos {
+    width: 55rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .input-btn > input {
+    width: 30rem;
+  }
+  .todos {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .input-btn > input {
+    width: 20rem;
+  }
+  .update {
+    flex-direction: column;
+  }
+  .todos {
+    width: 43rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-btn > input {
+    width: 80%;
+  }
+  .input-btn > button {
+    width: 40%;
+    display: flex;
+    padding: 0.5rem 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .update {
+    flex-direction: column;
+  }
+  .todos {
+    width: 24rem;
+  }
 }
