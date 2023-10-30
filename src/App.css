@@ -100,7 +100,8 @@ main > h2 {
   gap: 2rem;
 }
 
-.update > button {
+.update > button,
+.delete-btn {
   padding: 0.8rem 2rem;
   font-size: 1.6rem;
   border-radius: 2rem;
@@ -109,4 +110,17 @@ main > h2 {
   background-color: #6a7280;
   color: white;
   font-weight: 500;
+}
+
+.delete-btn:hover {
+  color: #6a7280;
+  background-color: white;
+}
+
+.editTaskInput {
+  color: white;
+  background-color: black;
+  outline: none;
+  border: none;
+  width: 100%;
 }
